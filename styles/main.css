@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+* {
+    overflow: hidden;
+}
+
+body {
+    margin: 0;
+    background-color: rgb(35, 22, 111);
+    overflow: hidden;
+}
+
+#logo_text {
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 0;
+    height: 100%;
+    width: 300px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 60px;
+    /*border: 1px solid gray;*/
+    /*text-align: center;*/
+    vertical-align: middle;
+    /*transform: translate(0, -50%);*/
+}
+
+#logo_text a {
+    display: block;
+    position: relative;
+    left: 20px;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.Bar_navbar {
+    position: absolute;
+    top: 20px;
+    width: 90%;
+    height: 100px;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%,0);
+    /*border: 1px solid gold;*/
+}
+
+#bar_butttons {
+    /*border: 1px solid green;*/
+    position: absolute;
+    right: 100px;
+    top: 50%;
+    width: 30%;
+    height: 90%;
+    transform: translate(0, -50%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.bar_butttons_bt {
+    position: relative;
+    width: 24%;
+    /*border: 1px solid red;*/
+    height: 90%;
+    text-align: center;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.bar_butttons_bt a {
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    top: 50%;
+    font-size: 17px;
+    margin: 0 auto;
+    display: block;
+    transform: translate(0%, -50%);
+}
+
+.active_bt a {
+    color: #007dc9;
+}
+
+.bar_line {
+    position: absolute;
+    width: 100px;
+    height: 5px;
+    background-color: #007dc9;
+    bottom: 15px;
+    right: 50%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border-radius: 50px;
+}
+
+#world {
+    position: absolute;
+    background-color: transparent;
+    width: 700px;
+    height: 700px;
+    /*border: 1px solid green;*/
+    top: 150px;
+    right: 100px;
+    /*display: none;*/
+}
+
+#word_bg {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /*border: 5px solid gray;*/
+}
+
+.text_show {
+    position: absolute;
+    left: 100px;
+    top: 300px;
+    width: 600px;
+    height: 50%;
+    /*border: 1px solid gray;*/
+}
+
+.text_show a {
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    margin-top: -50px;
+    color: white;
+}
+
+.text_show p {
+    font-family: 'Permanent Marker', cursive;
+    color: white;
+    font-size: 39px;
+}
+
+#page_footer {
+    position: fixed;
+    bottom: 2px;
+    left: 5px;
+    z-index: 99
+}
+
+#page_footer a{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 12px;
+}
+
+
+#menu_bar_bt {
+    position: fixed;
+    width: 45px;
+    height: auto;
+    right: 10px;
+    top: 20px;
+    fill: #007dc9;
+}
+
+
+@media (min-width: 2000px ) {
+    .text_show {
+        left: 30%;
+    }
+    #world {
+        /*top: 500px;*/
+        right: 30%;
+    }
+}
+
+@media (max-width: 1370px) {
+    #world {
+        right: 10px
+    }
+}
+
+@media (max-width: 1280px) {
+    #world {
+        width: 600px;
+        height: 600px;
+        top: 200px;
+    }
+    #bar_butttons {
+        width: 50%;
+    }
+}
+
+@media (max-width: 1210px) {
+    .text_show {
+        top: 150px;
+    }
+    #world {
+        width: 500px;
+        height: 500px;
+        top: 250px;
+        right: 15px;
+    }
+}
+
+@media (max-width: 750px) {
+    .text_show {
+        left: 50%;
+        right: 50%;
+        width: 90%;
+        transform: translate(-50%, 0);
+    }
+    #world {
+        right: 50%;
+        left: 50%;
+        transform: translate(-50%, 0);
+        top: 400px;
+    }
+}
+
+@media (max-width: 600px) {
+    #bar_butttons {
+        justify-content: space-around;
+    }
+    .bar_butttons_bt {
+        width: 30%;
+    }
+    .bar_butttons_bt a {
+        font-size: 14px
+    }
+    .Bar_navbar {
+        width: 98%;
+    }
+    #logo_text {
+        font-size: 30px;
+        left: 0px;
+    }
+    #bar_butttons {
+        right: 0px;
+        /*border: 1px solid gray;*/
+        width: 70%
+    }
+    .text_show {
+        top: 120px;
+    }
+    #world {
+        top: 40%;
+        width: 500px;
+        height: 500px;
+    }
+}
+
+@media (max-width: 350px) {
+    #world {
+        display: none
+    }
+}
+
+@media (max-height: 350px) {
+    #world {
+        display: none;
+    }
+}
